@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name          SimpleMMO Chat Tweaks
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Chat tweaks to suit my personal taste, and maybe yours too
+@author         LandarVargan/LoneWolfHT
+@license        CC-BY 4.0
+@preprocessor   default
+
+@var color lv-border-color "Personal Message Border Color" #45e545
+
+==/UserStyle== */
+
+@-moz-document domain("web.simple-mmo.com") {
+    #chat-container > div > div > div.flex.flex-col.space-y-2.text-xs.max-w-xs.ml-2.order-2.items-start.w-full > div > div[class*="nightwind-prevent"] {
+        border-color: var(--lv-border-color);
+        border-width: 2px;
+        border-style: dotted;
+        background-color: rgba(23, 23, 23, var(--tw-bg-opacity));
+    }
+}
